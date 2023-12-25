@@ -6,7 +6,7 @@ GOOGLE_ACCESS_TOKEN_OBTAIN_URL = 'https://oauth2.googleapis.com/token'
 GOOGLE_USER_INFO_URL = 'https://www.googleapis.com/oauth2/v3/userinfo'
 
 def google_get_access_token(code: str) -> str:
-    redirect_uri = 'http://localhost:3000/api/google/callback/'
+    redirect_uri = 'https://devbits-ps2-eobl.vercel.app/api/google/callback/'
     print(code)
 
     data = {
